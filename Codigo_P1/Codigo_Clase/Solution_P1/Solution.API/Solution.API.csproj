@@ -15,10 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Solution.BS\Solution.BS.csproj" />
     <ProjectReference Include="..\Solution.DAL.EF\Solution.DAL.EF.csproj" />
     <ProjectReference Include="..\Solution.DO\Solution.DO.csproj" />

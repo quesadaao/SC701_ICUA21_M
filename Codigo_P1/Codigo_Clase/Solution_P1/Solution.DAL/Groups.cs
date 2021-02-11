@@ -21,7 +21,7 @@ namespace Solution.DAL
             _repo.Commit();
         }
 
-        public IEnumerable<data.Groups> Getll()
+        public IEnumerable<data.Groups> GetAll()
         {
             return _repo.GetAll();
         }

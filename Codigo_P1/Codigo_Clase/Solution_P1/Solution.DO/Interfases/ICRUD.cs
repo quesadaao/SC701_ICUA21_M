@@ -9,7 +9,7 @@ namespace Solution.DO.Interfases
         void Insert(T t);
         void Update(T t);
         void Delete(T t);
-        IEnumerable<T> Getll();
+        IEnumerable<T> GetAll();
         T GetOneById(int id);
 
     }

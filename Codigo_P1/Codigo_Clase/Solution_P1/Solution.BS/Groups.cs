@@ -19,9 +19,9 @@ namespace Solution.BS
             new DAL.Groups(context).Delete(t);
         }
 
-        public IEnumerable<data.Groups> Getll()
+        public IEnumerable<data.Groups> GetAll()
         {
-            return new DAL.Groups(context).Getll();
+            return new DAL.Groups(context).GetAll();
         }
 
         public data.Groups GetOneById(int id)
