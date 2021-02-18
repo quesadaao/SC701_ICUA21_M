@@ -24,15 +24,15 @@ namespace Solution.DAL.Repository
         public async Task<IEnumerable<Foci>> GetAllWithAsAsync()
         {
             return await _db.Foci
-                .Include(m => m.GroupId)
+                .Include(m => m.Group)
                 .ToListAsync();
         }
 
         public async Task<Foci> GetByOneWithAsAsync(int id)
         {
             return await _db.Foci
-             .Include(m => m.GroupId)
-             .SingleOrDefaultAsync(m => m.GroupId == id);
+             .Include(m => m.Group)
+             .SingleOrDefaultAsync(m => m.FocusId == id);
         }
 
         //Metodo para obtener el context cargado del repository y asi utilizarlo en esta clase

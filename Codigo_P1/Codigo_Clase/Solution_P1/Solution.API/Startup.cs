@@ -11,6 +11,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using Solution.API.Mapping;
 
 namespace Solution.API
 {
@@ -29,6 +31,17 @@ namespace Solution.API
             services.AddDbContext<SolutionDbContext>(option => option.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddControllers();
+
+            // Seccion que representa la inicializacion del automapper para que trabje correctamente 
+            // Auto Mapper Configurations
+            var mapperConfig = new MapperConfiguration(mc => {
+                mc.AddProfile(new MappingProfile()); 
+                });
+
+            IMapper mapper = mapperConfig.CreateMapper();
+
+            services.AddSingleton(mapper);
+            // Finaliza la implementacion de automapper // 
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen();

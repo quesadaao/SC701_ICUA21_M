@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Solution.DAL.EF;
+using AutoMapper;
+using datamodels = Solution.API.DataModels;
 
 namespace Solution.API.Controllers
 {
@@ -14,38 +16,48 @@ namespace Solution.API.Controllers
     public class FociController : ControllerBase
     {
         private readonly SolutionDbContext _context;
+        //Declaracion del automapper para poder caster los objetos 
+        private readonly IMapper _mapper;
 
-        public FociController(SolutionDbContext context)
+        public FociController(SolutionDbContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
         // GET: api/Foci
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<data.Foci>>> GetFoci()
+        public async Task<ActionResult<IEnumerable<datamodels.Foci>>> GetFoci()
         {
-            return new Solution.BS.Foci(_context).GetAll().ToList();
+            // Declaramos una variable para traer la informacion
+            var aux = await new Solution.BS.Foci(_context).GetAllWithAsync();
+
+            var mapaux = _mapper.Map<IEnumerable<data.Foci>, IEnumerable<datamodels.Foci>>(aux).ToList();
+            return mapaux;
+            //return await new Solution.BS.Foci(_context).GetAllWithAsync();
+
         }
 
         // GET: api/Foci/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<data.Foci>> GetFoci(int id)
+        public async Task<ActionResult<datamodels.Foci>> GetFoci(int id)
         {
-            var foci = new Solution.BS.Foci(_context).GetOneById(id);
+            var foci = await new Solution.BS.Foci(_context).GetOneByIdWithAsync(id);
+            var mapaux = _mapper.Map<data.Foci, datamodels.Foci>(foci);
 
-            if (foci == null)
+            if (mapaux == null)
             {
                 return NotFound();
             }
 
-            return foci;
+            return mapaux;
         }
 
         // PUT: api/Foci/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutFoci(int id, data.Foci foci)
+        public async Task<IActionResult> PutFoci(int id, datamodels.Foci foci)
         {
             if (id != foci.FocusId)
             {
@@ -54,7 +66,9 @@ namespace Solution.API.Controllers
 
             try
             {
-                new Solution.BS.Foci(_context).Update(foci);
+                var mapaux = _mapper.Map<datamodels.Foci, data.Foci >(foci);
+
+                new Solution.BS.Foci(_context).Update(mapaux);
             }
             catch (Exception ee)
             {
@@ -75,16 +89,18 @@ namespace Solution.API.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<data.Foci>> PostFoci(data.Foci foci)
+        public async Task<ActionResult<datamodels.Foci>> PostFoci(datamodels.Foci foci)
         {
-            new Solution.BS.Foci(_context).Insert(foci);
+            var mapaux = _mapper.Map<datamodels.Foci, data.Foci>(foci);
+
+            new Solution.BS.Foci(_context).Insert(mapaux);
 
             return CreatedAtAction("GetFoci", new { id = foci.FocusId }, foci);
         }
 
         // DELETE: api/Foci/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<data.Foci>> DeleteFoci(int id)
+        public async Task<ActionResult<datamodels.Foci>> DeleteFoci(int id)
         {
             var foci = new Solution.BS.Foci(_context).GetOneById(id);
             if (foci == null)
@@ -93,9 +109,10 @@ namespace Solution.API.Controllers
             }
 
             new Solution.BS.Foci(_context).Delete(foci);
+            var mapaux = _mapper.Map<data.Foci, datamodels.Foci>(foci);
 
 
-            return foci;
+            return mapaux;
         }
 
         private bool FociExists(int id)
