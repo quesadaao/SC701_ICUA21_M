@@ -1,9 +1,0 @@
-C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P1\Codigo_Clase\Solution_P1\Solution.DO\bin\Debug\netcoreapp3.1\Solution.DO.deps.json
-C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P1\Codigo_Clase\Solution_P1\Solution.DO\bin\Debug\netcoreapp3.1\Solution.DO.dll
-C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P1\Codigo_Clase\Solution_P1\Solution.DO\bin\Debug\netcoreapp3.1\Solution.DO.pdb
-C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P1\Codigo_Clase\Solution_P1\Solution.DO\obj\Debug\netcoreapp3.1\Solution.DO.AssemblyInfoInputs.cache
-C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P1\Codigo_Clase\Solution_P1\Solution.DO\obj\Debug\netcoreapp3.1\Solution.DO.AssemblyInfo.cs
-C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P1\Codigo_Clase\Solution_P1\Solution.DO\obj\Debug\netcoreapp3.1\Solution.DO.csproj.CoreCompileInputs.cache
-C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P1\Codigo_Clase\Solution_P1\Solution.DO\obj\Debug\netcoreapp3.1\Solution.DO.dll
-C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P1\Codigo_Clase\Solution_P1\Solution.DO\obj\Debug\netcoreapp3.1\Solution.DO.pdb
-C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P1\Codigo_Clase\Solution_P1\Solution.DO\obj\Debug\netcoreapp3.1\Solution.DO.csprojAssemblyReference.cache
