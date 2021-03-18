@@ -188,3 +188,4 @@ C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P2\FrontEnd\FrontEnd\obj\Debug\netcoreap
 C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P2\FrontEnd\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Details.cshtml.g.cs
 C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P2\FrontEnd\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Edit.cshtml.g.cs
 C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P2\FrontEnd\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Index.cshtml.g.cs
+C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P2\FrontEnd\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout - Copy.cshtml.g.cs
