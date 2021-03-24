@@ -89,7 +89,6 @@ C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P2\FrontEnd\FrontEnd\obj\Debug\netcoreap
 C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P2\FrontEnd\FrontEnd\obj\Debug\netcoreapp3.1\FrontEnd.dll
 C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P2\FrontEnd\FrontEnd\obj\Debug\netcoreapp3.1\FrontEnd.pdb
 C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P2\FrontEnd\FrontEnd\obj\Debug\netcoreapp3.1\FrontEnd.genruntimeconfig.cache
-C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P2\FrontEnd\FrontEnd\obj\Debug\netcoreapp3.1\FrontEnd.csprojAssemblyReference.cache
 C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P2\FrontEnd\FrontEnd\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
 C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P2\FrontEnd\FrontEnd\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
 C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P2\FrontEnd\FrontEnd\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
@@ -189,3 +188,8 @@ C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P2\FrontEnd\FrontEnd\obj\Debug\netcoreap
 C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P2\FrontEnd\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Edit.cshtml.g.cs
 C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P2\FrontEnd\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Views\Customers\Index.cshtml.g.cs
 C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P2\FrontEnd\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout - Copy.cshtml.g.cs
+C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P2\FrontEnd\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Create.cshtml.g.cs
+C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P2\FrontEnd\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Delete.cshtml.g.cs
+C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P2\FrontEnd\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Details.cshtml.g.cs
+C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P2\FrontEnd\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Edit.cshtml.g.cs
+C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P2\FrontEnd\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Index.cshtml.g.cs
