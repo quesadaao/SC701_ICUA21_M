@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewBag.Title = "MiDropDownList";
+}
+
+<h2>MiDropDownList</h2>
+
+<br/>
+<label> Opcion: </label>
+@Html.DropDownList("miDropDownList", (List<SelectListItem>)ViewBag.listado)
+

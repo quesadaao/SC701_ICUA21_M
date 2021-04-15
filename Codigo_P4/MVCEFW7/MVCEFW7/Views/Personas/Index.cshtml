@@ -1,0 +1,63 @@
+﻿@model IEnumerable<MVCEFW7.Models.Persona>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.iCedula)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.vNombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bMuerto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dtNacimiento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.iEdad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.vEmail)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.iCedula)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.vNombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bMuerto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dtNacimiento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.iEdad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.vEmail)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.iID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.iID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.iID })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,57 @@
+﻿@model IEnumerable<MVCEFW7.Models.Direcciones>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Provincia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Canton)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Distrito)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Detalles)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Persona.iCedula)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Provincia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Canton)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Distrito)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Detalles)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Persona.iCedula)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdDireccion }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdDireccion }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdDireccion })
+        </td>
+    </tr>
+}
+
+</table>

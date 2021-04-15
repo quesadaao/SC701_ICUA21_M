@@ -1,0 +1,26 @@
+﻿@model List<MVCEFW7.Models.Pelicula>
+@{
+    ViewBag.Title = "MisPeliculas";
+}
+
+<h2>MisPeliculas</h2>
+<div>Mostrando @Model.Count() peliculas</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Titulo</th>
+            <th>Genero</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pelicula in Model)
+        {
+            var claseFila = (!pelicula.EstaEnCartelera) ? "danger": String.Empty;
+            <tr class="@claseFila">
+                <td>@Html.Raw(pelicula.Titulo)</td>
+                <td>@pelicula.Genero</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,66 @@
+﻿@model MVCEFW7.Models.Persona
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Persona</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.iCedula)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.iCedula)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vNombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vNombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.bMuerto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bMuerto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dtNacimiento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dtNacimiento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.iEdad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.iEdad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vEmail)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.iID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
